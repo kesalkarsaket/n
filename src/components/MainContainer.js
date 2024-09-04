@@ -9,9 +9,8 @@ const MainContainer = () => {
   const mainMovie = movies[0];
 
   const { overview, original_title, id } = mainMovie;
-  console.log(mainMovie, "main");
   return (
-    <div>
+    <div className="w-screen">
       <VideoTitle title={original_title} overview={overview} />
       <Videobackground movieId={id} />
     </div>
